@@ -60,6 +60,8 @@ df_full = pd.DataFrame(u.T, index=[f"t[{i}]={ti:.2f}" for i, ti in enumerate(t)]
 
 print("\nПолная таблица значений температуры на всех временных слоях:")
 print(df_full)
+# Сохранение в файл
+df_full.to_csv('table.csv', encoding='utf-8-sig', float_format='%.7f')
 
 # Построение графика на j-ом временном слое
 while True:
