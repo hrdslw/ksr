@@ -55,6 +55,7 @@ for j in range(1, m + 1):
     u[0, j] = u[1, j]
 
 
+
 # Таблица
 df_full = pd.DataFrame(u.T, index=[f"t[{i}]={ti:.2f}" for i, ti in enumerate(t)], columns=[f"x[{i}]={xi:.2f}" for i, xi in enumerate(x)])
 
