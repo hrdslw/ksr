@@ -58,7 +58,7 @@ for j in range(1, m + 1):
 # Таблица
 df_full = pd.DataFrame(u.T, index=[f"t[{i}]={ti:.2f}" for i, ti in enumerate(t)], columns=[f"x[{i}]={xi:.2f}" for i, xi in enumerate(x)])
 
-print("\nПолная таблица значений температуры на всех временных слоях:")
+print("\nТаблица значений температуры на всех временных слоях:")
 print(df_full)
 # Сохранение в файл
 df_full.to_csv('table.csv', encoding='utf-8-sig', float_format='%.7f')

@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 import pandas as pd
-import math
+#import math
 
 #Ввод размеров сетки
 print("Введите размеры сетки")
@@ -79,7 +79,7 @@ for j in range(1, 3):
 
     B_m = np.zeros(5)
     for i in range(1, 4):
-        B_m[i] = -5 * np.sin(t[j]) - float(u[i + 1, 0]) / float(tau)
+        B_m[i] = -5 * np.sin(t[j]) - float(u[i4, 0]) / float(tau)
     B_m[4] = 2 / 11
 
     linSolve = np.linalg.solve(A_m.T, B_m)
